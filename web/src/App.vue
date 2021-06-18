@@ -40,7 +40,7 @@
 					href="https://www.facebook.com/avinandanjana"
 					target="_blank"
 				>
-					<v-icon>mdi-facebook</v-icon>&nbsp;Avinandan Jana</v-btn
+					<v-icon left>mdi-facebook</v-icon> Avinandan Jana</v-btn
 				>
 			</v-toolbar-items>
 		</v-app-bar>
