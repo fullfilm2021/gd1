@@ -89,6 +89,7 @@ import FileUploadDialog from './FileUploadDialog'
 const SUPPORTED_TYPES = {
 	'application/epub+zip': 'epub',
 	'video/mp4': 'video',
+	'video/mkv': 'video',
 	'image/png': 'image',
 	'image/jpeg': 'image',
 	'image/gif': 'image',
