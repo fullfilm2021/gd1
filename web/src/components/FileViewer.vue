@@ -1,7 +1,7 @@
 <template>
 	<v-container fluid>
 		<portal to="navbar">
-			<v-toolbar-items>
+			<v-toolbar-items class="hidden-sm-and-down">
 				<template v-for="seg in pathSegments">
 					<v-icon :key="seg.path + '-icon'">mdi-menu-right</v-icon>
 					<v-btn

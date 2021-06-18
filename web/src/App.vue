@@ -1,7 +1,7 @@
 <template>
 	<v-app>
 		<v-app-bar app color="error" dark dense>
-			<v-toolbar-title class="headline pointer mr-3 hidden-sm-and-down">
+			<v-toolbar-title class="headline pointer mr-3">
 				<router-link
 					:to="{ path: '/', query: { rootId: $route.query.rootId } }"
 					tag="span"
