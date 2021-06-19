@@ -126,7 +126,7 @@
 			<router-view />
 		</v-content>
 		<LoginDialog :show="showAuthInput" />
-		<v-snackbar v-model="snack" :timeout="time" color="error"
+		<v-snackbar v-model="snack" :timeout="time" top color="error"
 			>Sorry, currently its not available!</v-snackbar
 		>
 	</v-app>
