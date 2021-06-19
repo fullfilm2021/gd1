@@ -56,7 +56,6 @@
 				tile
 				elevation="5"
 				dark
-				color="pink lighten-2"
 			>
 				<v-list-item three-line>
 					<v-list-item-content>
