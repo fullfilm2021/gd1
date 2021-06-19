@@ -56,7 +56,7 @@
 				tile
 				elevation="5"
 				dark
-				color="teal darken-4"
+				color="pink lighten-2"
 			>
 				<v-list-item three-line>
 					<v-list-item-content>
@@ -102,16 +102,24 @@
 							max-width="24"
 						></v-img
 					></v-btn>
-					<v-btn
+					<!-- <v-btn
 						icon
 						tag="a"
 						href="https://www.twitter.com/ghanajana"
 						target="_blank"
 						><v-icon color="#1da1f2">mdi-twitter</v-icon></v-btn
-					>
+					> -->
 
 					<v-btn icon @click="snack = true">
 						<v-icon color="#FF0000">mdi-youtube</v-icon>
+					</v-btn>
+					<v-btn
+						tag="a"
+						href="whatsapp://send?text=Latest HD Movies Download! [Super Fast Download] → https://bit.ly/3vH6eaM"
+						data-action="share/whatsapp/share"
+						icon
+					>
+						<v-icon color="red">mdi-share-all</v-icon>
 					</v-btn>
 				</v-card-actions>
 			</v-card>
