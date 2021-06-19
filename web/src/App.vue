@@ -49,7 +49,7 @@
 				<v-card class="mx-auto" tile elevation="1"> </v-card>
 			</v-col>
 		</v-row> -->
-		<v-card class="mx-auto mt-3" max-width="344" tile elevation="2">
+		<v-card class="mx-auto mt-5" max-width="344" tile elevation="2">
 			<v-list-item three-line>
 				<v-list-item-content>
 					<div class="text-overline mb-4">ADMIN</div>
@@ -62,7 +62,7 @@
 				</v-list-item-content>
 
 				<v-list-item-avatar tile size="80" color="grey">
-					<img src="@/assets/Photo.jpg" alt="Avinandan" />
+					<img src="https://i.imgur.com/RXzPMXJ.png" alt="Avinandan" />
 				</v-list-item-avatar>
 			</v-list-item>
 
