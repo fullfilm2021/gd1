@@ -30,12 +30,7 @@
 		</v-row>
 		<v-row justify="center">
 			<v-col md="8" lg="6">
-				<v-card
-					class="mx-auto"
-					tile
-					dark
-					:loading="loading"
-				>
+				<v-card class="mx-auto" tile dark :loading="loading">
 					<template slot="progress">
 						<v-progress-linear
 							color="red accent-3"
@@ -59,14 +54,16 @@
 							<v-list-item-title
 								v-text="item.fileName"
 							></v-list-item-title>
-							<v-list-item-subtitle
-								v-if="!item.isFolder"
-								v-text="item.fileSize"
-							></v-list-item-subtitle>
+							<v-list-item-subtitle v-if="!item.isFolder"
+								>File Size:
+								{{ item.fileSize }} | Uploaded: {{ item.modifiedTime }}</v-list-item-subtitle
+							>
 							<v-list-item-subtitle
 								class="font-weight-thin"
 								v-if="item.isFolder"
-							>Last Updated: {{ item.modifiedTime }}</v-list-item-subtitle>
+								>Created:
+								{{ item.modifiedTime }}</v-list-item-subtitle
+							>
 						</v-list-item-content>
 						<v-list-item-action>
 							<v-btn
@@ -77,10 +74,11 @@
 								download
 								@click.stop
 							>
-								<v-icon dark>
-									mdi-cloud-download
-								</v-icon>
+								<v-icon dark> mdi-cloud-download </v-icon>
 							</v-btn>
+							<v-icon v-if="item.isFolder" dark right
+								>mdi-folder-open</v-icon
+							>
 						</v-list-item-action>
 					</v-list-item>
 				</v-card>
