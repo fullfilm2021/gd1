@@ -38,9 +38,10 @@
 				>
 					<template slot="progress">
 						<v-progress-linear
-							color="deep-purple"
+							color="red accent-3"
 							height="10"
 							indeterminate
+							rounded
 						></v-progress-linear>
 					</template>
 					<v-list-item
@@ -62,6 +63,10 @@
 								v-if="!item.isFolder"
 								v-text="item.fileSize"
 							></v-list-item-subtitle>
+							<v-list-item-subtitle
+								class="font-weight-thin"
+								v-text="item.modifiedTime"
+							></v-list-item-subtitle>
 						</v-list-item-content>
 						<v-list-item-action>
 							<v-btn
@@ -72,8 +77,8 @@
 								download
 								@click.stop
 							>
-								<v-icon color="black">
-									mdi-file-download
+								<v-icon dark>
+									mdi-cloud-download
 								</v-icon>
 							</v-btn>
 						</v-list-item-action>
@@ -149,7 +154,7 @@ export default {
 					class: ['fileName'],
 				},
 				{
-					text: this.$t('modifiedTime'),
+					text: 'Created: ' + this.$t('modifiedTime'),
 					value: 'modifiedTime',
 					filterable: false,
 					class: 'hidden-sm-and-down',
