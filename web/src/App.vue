@@ -1,6 +1,6 @@
 <template>
 	<v-app>
-		<v-app-bar app color="error" dark dense>
+		<v-app-bar app color="success" dark dense prominent class="elevation-0">
 			<v-toolbar-title class="headline pointer mr-3">
 				<router-link
 					:to="{ path: '/', query: { rootId: $route.query.rootId } }"
