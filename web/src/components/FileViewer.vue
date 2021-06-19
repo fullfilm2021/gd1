@@ -38,8 +38,8 @@
 				>
 					<template slot="progress">
 						<v-progress-linear
-							color="red lighten-1"
-							height="5"
+							color="deep-purple"
+							height="10"
 							indeterminate
 						></v-progress-linear>
 					</template>
