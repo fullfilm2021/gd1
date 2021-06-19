@@ -32,8 +32,8 @@
 			<v-col md="8" lg="6">
 				<v-card
 					class="mx-auto"
-					min-height="100px"
 					tile
+					dark
 					:loading="loading"
 				>
 					<template slot="progress">
