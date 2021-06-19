@@ -12,8 +12,8 @@
 				<v-menu offset-y v-if="drives.length">
 					<template v-slot:activator="{ on }">
 						<v-btn text v-on="on" class="text-none">
-							<v-icon>mdi-cloud</v-icon>&nbsp;{{
-								currentDrive.text
+							<v-icon left>mdi-cloud</v-icon>
+							{{ currentDrive.text
 							}}<v-icon>mdi-menu-down</v-icon>
 						</v-btn>
 					</template>
@@ -44,9 +44,71 @@
 				>
 			</v-toolbar-items>
 		</v-app-bar>
+		<!-- <v-row justify="center">
+			<v-col md="8" lg="6">
+				<v-card class="mx-auto" tile elevation="1"> </v-card>
+			</v-col>
+		</v-row> -->
+		<v-card class="mx-auto mt-3" max-width="344" tile elevation="2">
+			<v-list-item three-line>
+				<v-list-item-content>
+					<div class="text-overline mb-4">ADMIN</div>
+					<v-list-item-title class="text-h5 mb-1">
+						Avinandan Jana
+					</v-list-item-title>
+					<v-list-item-subtitle>
+						admin@avinandan.com
+					</v-list-item-subtitle>
+				</v-list-item-content>
 
+				<v-list-item-avatar tile size="80" color="grey">
+					<img src="@/assets/Photo.jpg" alt="Avinandan" />
+				</v-list-item-avatar>
+			</v-list-item>
+
+			<v-card-actions>
+				<v-btn
+					icon
+					tag="a"
+					href="https://www.facebook.com/avinandanjana"
+					target="_blank"
+					><v-icon color="#4267B2">mdi-facebook</v-icon></v-btn
+				>
+				<v-btn
+					icon
+					tag="a"
+					href="https://wa.me/918016181551"
+					target="_blank"
+					><v-icon color="#4ac959">mdi-whatsapp</v-icon></v-btn
+				>
+				<v-btn
+					icon
+					tag="a"
+					href="https://www.instagram.com/avinandanjana"
+					target="_blank"
+					><v-img
+						src="https://brandpalettes.com/wp-content/uploads/2018/10/Instagram-300x300.png"
+						max-width="24"
+					></v-img
+				></v-btn>
+				<v-btn
+					icon
+					tag="a"
+					href="https://www.twitter.com/ghanajana"
+					target="_blank"
+					><v-icon color="#1da1f2">mdi-twitter</v-icon></v-btn
+				>
+
+				<v-btn icon @click="snack = true">
+					<v-icon color="#FF0000">mdi-youtube</v-icon>
+				</v-btn>
+			</v-card-actions>
+		</v-card>
 		<v-content> <router-view /> </v-content>
 		<LoginDialog :show="showAuthInput" />
+		<v-snackbar v-model="snack" :timeout="time" color="error"
+			>Sorry, currently its not available!</v-snackbar
+		>
 	</v-app>
 </template>
 <script>
@@ -61,6 +123,8 @@ export default {
 		return {
 			drives: [],
 			value: {},
+			snack: false,
+			time: 2000,
 			showAuthInput: false,
 		}
 	},

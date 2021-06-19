@@ -36,6 +36,13 @@
 					tile
 					:loading="loading"
 				>
+					<template slot="progress">
+						<v-progress-linear
+							color="red lighten-1"
+							height="5"
+							indeterminate
+						></v-progress-linear>
+					</template>
 					<v-list-item
 						v-for="item in list"
 						:key="item.id"
