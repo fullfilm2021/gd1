@@ -32,7 +32,7 @@
 			<v-col md="8" lg="6">
 				<v-card
 					class="mx-auto"
-					min-height="400px"
+					min-height="100px"
 					tile
 					:loading="loading"
 				>

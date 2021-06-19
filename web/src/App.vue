@@ -35,7 +35,7 @@
 			<v-toolbar-items>
 				<v-btn
 					text
-					class="text-none hidden-sm-and-down"
+					class="text-none"
 					tag="a"
 					href="https://www.facebook.com/avinandanjana"
 					target="_blank"
