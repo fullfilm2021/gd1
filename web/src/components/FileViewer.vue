@@ -65,6 +65,7 @@
 							></v-list-item-subtitle>
 							<v-list-item-subtitle
 								class="font-weight-thin"
+								v-if="item.isFolder"
 								v-text="item.modifiedTime"
 							></v-list-item-subtitle>
 						</v-list-item-content>
@@ -256,7 +257,7 @@ export default {
 					fileName: f.name,
 					modifiedTime: format(
 						new Date(f.modifiedTime),
-						'yyyy/MM/dd HH:mm:ss'
+						'dd/MM/yyyy HH:mm:ss'
 					),
 					isFolder,
 					isGoogleFile,
