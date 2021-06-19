@@ -52,7 +52,7 @@
 		<v-content>
 			<v-card
 				class="mx-auto mt-2"
-				max-width="400"
+				max-width="350"
 				tile
 				elevation="5"
 				dark
@@ -119,7 +119,7 @@
 						data-action="share/whatsapp/share"
 						icon
 					>
-						<v-icon color="red">mdi-share-all</v-icon>
+						<v-icon>mdi-share-all</v-icon>
 					</v-btn>
 				</v-card-actions>
 			</v-card>
