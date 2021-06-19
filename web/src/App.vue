@@ -69,7 +69,7 @@
 						</v-list-item-subtitle>
 					</v-list-item-content>
 
-					<v-list-item-avatar tile size="100">
+					<v-list-item-avatar size="100">
 						<img
 							src="https://i.imgur.com/M6NHJri.png"
 							alt="Avinandan Jana"
