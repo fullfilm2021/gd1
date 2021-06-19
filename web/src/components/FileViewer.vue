@@ -66,8 +66,7 @@
 							<v-list-item-subtitle
 								class="font-weight-thin"
 								v-if="item.isFolder"
-								v-text="item.modifiedTime"
-							></v-list-item-subtitle>
+							>Last Updated: {{ item.modifiedTime }}</v-list-item-subtitle>
 						</v-list-item-content>
 						<v-list-item-action>
 							<v-btn
@@ -155,7 +154,7 @@ export default {
 					class: ['fileName'],
 				},
 				{
-					text: 'Created: ' + this.$t('modifiedTime'),
+					text: this.$t('modifiedTime'),
 					value: 'modifiedTime',
 					filterable: false,
 					class: 'hidden-sm-and-down',
