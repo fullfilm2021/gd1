@@ -97,7 +97,7 @@
 						</v-btn>
 					</v-card-actions>
 					<v-divider class="mx-5"></v-divider>
-					<v-card-text class="font-weight-thin">{{ seg.name }}</v-card-text>
+					<v-card-text class="font-weight-thin" v-for="seg in pathSegments" :key="seg">{{ seg.name }}</v-card-text>
 					<v-divider class="mx-5"></v-divider>
 					<template slot="progress">
 						<v-progress-linear
