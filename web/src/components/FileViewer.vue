@@ -122,11 +122,13 @@
 							<v-list-item-subtitle
 								v-if="!item.isFolder"
 								class="font-weight-thin"
+								color="light-green accent-3"
 								>Size: {{ item.fileSize }} | Uploaded:
 								{{ item.modifiedTime }}</v-list-item-subtitle
 							>
 							<v-list-item-subtitle
 								class="font-weight-thin"
+								color="light-green accent-3"
 								v-if="item.isFolder"
 								>Created:
 								{{ item.modifiedTime }}</v-list-item-subtitle
@@ -143,7 +145,7 @@
 							>
 								<v-icon dark> mdi-cloud-download </v-icon>
 							</v-btn>
-							<v-icon v-if="item.isFolder" dark right color="#00b200"
+							<v-icon v-if="item.isFolder" dark right
 								>mdi-folder-open</v-icon
 							>
 						</v-list-item-action>
