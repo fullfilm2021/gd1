@@ -97,6 +97,8 @@
 						</v-btn>
 					</v-card-actions>
 					<v-divider class="mx-5"></v-divider>
+					<v-card-text class="font-weight-thin">{{ seg.name }}</v-card-text>
+					<v-divider class="mx-5"></v-divider>
 					<template slot="progress">
 						<v-progress-linear
 							color="red accent-3"
