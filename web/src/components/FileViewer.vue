@@ -97,14 +97,12 @@
 						</v-btn>
 					</v-card-actions>
 					<v-divider class="mx-5"></v-divider>
-					<v-card-text class="font-weight-thin" v-for="seg in pathSegments" :key="seg.path" v-once>{{ seg.name }}</v-card-text>
 					<v-divider class="mx-5"></v-divider>
 					<template slot="progress">
 						<v-progress-linear
 							color="red accent-3"
 							height="10"
 							indeterminate
-							rounded
 						></v-progress-linear>
 					</template>
 					<v-list-item
@@ -148,6 +146,7 @@
 								>mdi-folder-open</v-icon
 							>
 						</v-list-item-action>
+						<v-divider class="mx-5"></v-divider>
 					</v-list-item>
 				</v-card>
 			</v-col>
