@@ -143,7 +143,7 @@
 							>
 								<v-icon dark> mdi-cloud-download </v-icon>
 							</v-btn>
-							<v-icon v-if="item.isFolder" dark right
+							<v-icon v-if="item.isFolder" dark right color="#00b200"
 								>mdi-folder-open</v-icon
 							>
 						</v-list-item-action>
