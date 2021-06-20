@@ -89,7 +89,7 @@
 
 						<v-btn
 							tag="a"
-							href="whatsapp://send?text=Latest HD Movies Download! [Super Fast Download] → https://bit.ly/3vH6eaM"
+							href="whatsapp://send?text=Latest HD Movies Download! [Super Fast Download] → https://liveiplt20.xyz/"
 							data-action="share/whatsapp/share"
 							icon
 						>
@@ -97,10 +97,9 @@
 						</v-btn>
 					</v-card-actions>
 					<v-divider class="mx-5"></v-divider>
-					<v-divider class="mx-5"></v-divider>
 					<template slot="progress">
 						<v-progress-linear
-							color="red accent-3"
+							color="light-green accent-3"
 							height="10"
 							indeterminate
 						></v-progress-linear>
