@@ -34,7 +34,7 @@
 					<v-list-item three-line>
 						<v-list-item-content>
 							<div class="text-overline mb-4">ADMIN</div>
-							<v-list-item-title class="text-h5 mb-1">
+							<v-list-item-title class="text-h5 mb-1 font-weight-black">
 								Avinandan Jana
 							</v-list-item-title>
 							<v-list-item-subtitle class="font-weight-thin">
@@ -121,14 +121,12 @@
 							></v-list-item-title>
 							<v-list-item-subtitle
 								v-if="!item.isFolder"
-								class="font-weight-thin"
-								color="light-green accent-3"
+								class="font-weight-thin txtColor"
 								>Size: {{ item.fileSize }} | Uploaded:
 								{{ item.modifiedTime }}</v-list-item-subtitle
 							>
 							<v-list-item-subtitle
-								class="font-weight-thin"
-								color="light-green accent-3"
+								class="font-weight-thin txtColor"
 								v-if="item.isFolder"
 								>Created:
 								{{ item.modifiedTime }}</v-list-item-subtitle
@@ -155,6 +153,11 @@
 		</v-row>
 	</v-container>
 </template>
+<style>
+.txtColor{
+	color: #76FF03;
+}
+</style>
 <script>
 import { format } from 'date-fns'
 import prettyBytes from 'pretty-bytes'
