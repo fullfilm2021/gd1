@@ -49,7 +49,7 @@
 				<v-card class="mx-auto" tile elevation="1"> </v-card>
 			</v-col>
 		</v-row> -->
-		<v-content>
+		<v-main>
 			<!-- <v-card
 				class="mx-auto mt-2"
 				max-width="350"
@@ -117,7 +117,7 @@
 				</v-card-actions>
 			</v-card> -->
 			<router-view />
-		</v-content>
+		</v-main>
 		<LoginDialog :show="showAuthInput" />
 		<!-- <v-snackbar v-model="snack" :timeout="time" top color="error"
 			>Sorry, currently its not available!</v-snackbar

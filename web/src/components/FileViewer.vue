@@ -32,67 +32,71 @@
 			<v-col md="8" lg="6">
 				<v-card class="mx-auto" tile dark :loading="loading">
 					<v-list-item three-line>
-					<v-list-item-content>
-						<div class="text-overline mb-4">ADMIN</div>
-						<v-list-item-title class="text-h5 mb-1">
-							Avinandan Jana
-						</v-list-item-title>
-						<v-list-item-subtitle>
-							admin@avinandan.com
-						</v-list-item-subtitle>
-					</v-list-item-content>
+						<v-list-item-content>
+							<div class="text-overline mb-4">ADMIN</div>
+							<v-list-item-title class="text-h5 mb-1">
+								Avinandan Jana
+							</v-list-item-title>
+							<v-list-item-subtitle class="font-weight-thin">
+								admin@avinandan.com
+							</v-list-item-subtitle>
+						</v-list-item-content>
 
-					<v-list-item-avatar size="100">
-						<img
-							src="https://i.imgur.com/M6NHJri.png"
-							alt="Avinandan Jana"
-						/>
-					</v-list-item-avatar>
-				</v-list-item>
+						<v-list-item-avatar size="100">
+							<img
+								src="https://i.imgur.com/M6NHJri.png"
+								alt="Avinandan Jana"
+							/>
+						</v-list-item-avatar>
+					</v-list-item>
 
-				<v-card-actions>
-					<v-btn
-						icon
-						tag="a"
-						href="https://www.facebook.com/avinandanjana"
-						target="_blank"
-						><v-icon color="#4267B2">mdi-facebook</v-icon></v-btn
-					>
-					<v-btn
-						icon
-						tag="a"
-						href="https://wa.me/918016181551"
-						target="_blank"
-						><v-icon color="#4ac959">mdi-whatsapp</v-icon></v-btn
-					>
-					<v-btn
-						icon
-						tag="a"
-						href="https://www.instagram.com/avinandanjana"
-						target="_blank"
-						><v-img
-							src="https://brandpalettes.com/wp-content/uploads/2018/10/Instagram-300x300.png"
-							max-width="24"
-						></v-img
-					></v-btn>
-					<!-- <v-btn
-						icon
-						tag="a"
-						href="https://www.twitter.com/ghanajana"
-						target="_blank"
-						><v-icon color="#1da1f2">mdi-twitter</v-icon></v-btn
-					> -->
+					<v-card-actions>
+						<v-btn
+							icon
+							tag="a"
+							href="https://www.facebook.com/avinandanjana"
+							target="_blank"
+							><v-icon color="#4267B2"
+								>mdi-facebook</v-icon
+							></v-btn
+						>
+						<v-btn
+							icon
+							tag="a"
+							href="https://wa.me/918016181551"
+							target="_blank"
+							><v-icon color="#4ac959"
+								>mdi-whatsapp</v-icon
+							></v-btn
+						>
+						<v-btn
+							icon
+							tag="a"
+							href="https://www.instagram.com/avinandanjana"
+							target="_blank"
+							><v-img
+								src="https://brandpalettes.com/wp-content/uploads/2018/10/Instagram-300x300.png"
+								max-width="24"
+							></v-img
+						></v-btn>
+						<v-btn
+							icon
+							tag="a"
+							href="https://www.twitter.com/ghanajana"
+							target="_blank"
+							><v-icon color="#1da1f2">mdi-twitter</v-icon></v-btn
+						>
 
-					<v-btn
-						tag="a"
-						href="whatsapp://send?text=Latest HD Movies Download! [Super Fast Download] → https://bit.ly/3vH6eaM"
-						data-action="share/whatsapp/share"
-						icon
-					>
-						<v-icon>mdi-share-all</v-icon>
-					</v-btn>
-				</v-card-actions>
-				<v-divider class="mx-5"></v-divider>
+						<v-btn
+							tag="a"
+							href="whatsapp://send?text=Latest HD Movies Download! [Super Fast Download] → https://bit.ly/3vH6eaM"
+							data-action="share/whatsapp/share"
+							icon
+						>
+							<v-icon>mdi-share-all</v-icon>
+						</v-btn>
+					</v-card-actions>
+					<v-divider class="mx-5"></v-divider>
 					<template slot="progress">
 						<v-progress-linear
 							color="red accent-3"
@@ -116,9 +120,9 @@
 							<v-list-item-title
 								v-text="item.fileName"
 							></v-list-item-title>
-							<v-list-item-subtitle v-if="!item.isFolder"
-								>File Size:
-								{{ item.fileSize }} | Uploaded: {{ item.modifiedTime }}</v-list-item-subtitle
+							<v-list-item-subtitle v-if="!item.isFolder" class="font-weight-thin"
+								>Size: {{ item.fileSize }} | Uploaded:
+								{{ item.modifiedTime }}</v-list-item-subtitle
 							>
 							<v-list-item-subtitle
 								class="font-weight-thin"
