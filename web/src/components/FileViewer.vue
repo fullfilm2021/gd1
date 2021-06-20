@@ -92,6 +92,7 @@
 						<v-icon>mdi-share-all</v-icon>
 					</v-btn>
 				</v-card-actions>
+				<v-divider class="mx-5"></v-divider>
 					<template slot="progress">
 						<v-progress-linear
 							color="red accent-3"

@@ -50,7 +50,7 @@
 			</v-col>
 		</v-row> -->
 		<v-content>
-			<v-card
+			<!-- <v-card
 				class="mx-auto mt-2"
 				max-width="350"
 				tile
@@ -101,13 +101,7 @@
 							max-width="24"
 						></v-img
 					></v-btn>
-					<!-- <v-btn
-						icon
-						tag="a"
-						href="https://www.twitter.com/ghanajana"
-						target="_blank"
-						><v-icon color="#1da1f2">mdi-twitter</v-icon></v-btn
-					> -->
+					
 
 					<v-btn icon @click="snack = true">
 						<v-icon color="#FF0000">mdi-youtube</v-icon>
@@ -121,13 +115,13 @@
 						<v-icon>mdi-share-all</v-icon>
 					</v-btn>
 				</v-card-actions>
-			</v-card>
+			</v-card> -->
 			<router-view />
 		</v-content>
 		<LoginDialog :show="showAuthInput" />
-		<v-snackbar v-model="snack" :timeout="time" top color="error"
+		<!-- <v-snackbar v-model="snack" :timeout="time" top color="error"
 			>Sorry, currently its not available!</v-snackbar
-		>
+		> -->
 	</v-app>
 </template>
 <script>
@@ -142,8 +136,8 @@ export default {
 		return {
 			drives: [],
 			value: {},
-			snack: false,
-			time: 2000,
+			// snack: false,
+			// time: 2000,
 			showAuthInput: false,
 		}
 	},
