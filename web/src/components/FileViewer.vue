@@ -120,7 +120,9 @@
 							<v-list-item-title
 								v-text="item.fileName"
 							></v-list-item-title>
-							<v-list-item-subtitle v-if="!item.isFolder" class="font-weight-thin"
+							<v-list-item-subtitle
+								v-if="!item.isFolder"
+								class="font-weight-thin"
 								>Size: {{ item.fileSize }} | Uploaded:
 								{{ item.modifiedTime }}</v-list-item-subtitle
 							>
@@ -146,7 +148,6 @@
 								>mdi-folder-open</v-icon
 							>
 						</v-list-item-action>
-						<v-divider class="mx-5"></v-divider>
 					</v-list-item>
 				</v-card>
 			</v-col>
