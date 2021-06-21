@@ -34,7 +34,9 @@
 					<v-list-item three-line>
 						<v-list-item-content>
 							<div class="text-overline mb-4">ADMIN</div>
-							<v-list-item-title class="text-h5 mb-1 font-weight-black">
+							<v-list-item-title
+								class="text-h5 mb-1 font-weight-black"
+							>
 								Avinandan Jana
 							</v-list-item-title>
 							<v-list-item-subtitle class="font-weight-thin">
@@ -116,9 +118,16 @@
 							<v-icon>{{ item.icon }}</v-icon>
 						</v-list-item-avatar>
 						<v-list-item-content class="py-2">
-							<v-list-item-title
-								v-text="item.fileName"
-							></v-list-item-title>
+							<v-list-item-title>
+								<v-tooltip bottom>
+									<template v-slot:activator="{ on, attrs }">
+										<span v-bind="attrs" v-on="on">
+											{{ item.fileName }}
+										</span>
+									</template>
+									<span>{{ item.fileName }}</span>
+								</v-tooltip>
+							</v-list-item-title>
 							<v-list-item-subtitle
 								v-if="!item.isFolder"
 								class="font-weight-thin txtColor"
@@ -154,8 +163,8 @@
 	</v-container>
 </template>
 <style>
-.txtColor{
-	color: #76FF03;
+.txtColor {
+	color: #76ff03 !important;
 }
 </style>
 <script>
